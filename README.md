@@ -1,7 +1,7 @@
 # Whatsapp-sending-to-phone-numberlist
 Whatsapp sending for phone numberlist with yownsupp.
 
-One day I god a task to do mass sending with Whatsapp to phonelist of clients. It is so not good! But the effect from sending was null. all numbers for used in younsupp were blocked!
+One day I god a task to do mass sending with Whatsapp to phonelist of clients. It is so not good! But the effect from sending was null. All numbers for used in younsupp were blocked!
 
 Important 
 
