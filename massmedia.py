@@ -27,14 +27,13 @@ with open(fname) as f:
             number = number[:-1]
 
       IP = ipgetter.myip()
-      while (IP  == '81.30.49.34'):
+      while (IP  == '1.2.3.4'):  # replace with your outside IP
 	  system("killall  openvpn")
 	  sleep(2)
           system("openvpn /var/moni/" + str(randint(1,7))  +  ".ovpn &  >> ip.log")
           sleep(10)
 	  IP = ipgetter.myip()    
       print("My IP: " + IP)      
-#      s="/var/moni/yowsup-cli demos -c config1 -loc  "+ number +  " 54.799312 56.040262   \"" + txt[randint(0,2)] + "\"   \"http://hefnerufa.ru\" "
       s="/var/moni/yowsup-cli demos -c config"+ str(randint(1,3))  +  "  --unmoxie  -s  "+ number + "  \"" +  txt[randint(0,7)] + "\" "
       print s
       system(s)
@@ -43,6 +42,3 @@ with open(fname) as f:
       system("killall openvpn")
       sleep(randint(10,50))
 
-
-#      system( s )
-#
